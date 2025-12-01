@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/style.css">
+    <title></title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+    </style>
+</head>
+
+<body>
+    <div id="header">
+
+        <nav>
+            <a href="" class="link">FREATURES</a>
+            <a href="" class="link">INTEGRATIONS</a>
+            <a href="" class="link">PRICING</a>
+        </nav>
+
+    </div>
+    <div id="main">
+        <h1>Hi, we're Silas!</h1>
+        <p>Silas is a professional prorammer(irony), that programmed the front-end and back-end of popular plataforms
+            like google, amazon(not true)</p>
+        <p><br>Silas is capable to do the worst websites in the market, he cant centralize a div he always ask chatGPT:
+            "how to centralize a div" like, who do this? He think that vibe coding is stupid but is better vibe coding
+            than this pieces of shit haha</p>
+        <br>
+        <br>
+            
+        <br>
+        <h1>Contact Him!</h1>
+        <form action="https://formspree.io/f/mnnepgde" method="post">
+            <label for="name" class="form">Name</label><br>
+            <input type="text" name="name" id="name" placeholder="Enter your name.. ✍️"><br>
+            <label for="email" class="form">Email*</label><br>
+            <input type="email" name="email" id="email" placeholder="Enter your Email..✉️ " required><br>
+            <label for="message" class="form">Message*</label><br>
+            <textarea name="message" id="message" class="form" placeholder="Enter your message.." required></textarea>
+            <input type="submit" value="Submit" id="submit" onclick="validarEmail();">
+        </form>
+    </div>
+    <br><br><br><br><br><br><br>
+    <div id="join-action">
+        <div id="join">
+            <h1>Start programming <br>not like Silas today</h1>
+            <button onclick="window.location = 'bruh.html'" id="join-b">JOIN</button>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="rights">
+
+            <p style="text-align: right; margin: 10px 3em 0px 0px ; font-size: 13px; text-decoration: underline;">&copy;
+                2024 Todos os direitos reservados, só que
+                não kkkk</p>
+        </div>
+
+    </div>
+    <script src="assets/script.js">
+
+        function validarEmail() {
+            const email = document.getElementById('email').value;
+            const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!regex.test(email)) {
+                alert("Digite um email válido!");
+            } else {
+                alert("Email válido!");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
